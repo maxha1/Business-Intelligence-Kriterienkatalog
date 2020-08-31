@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Stylesheet.css">
+    <title>BI-Kriterienkatalog</title>
+  </head>
+  <body>
+    <h1 id="Überschrift1">
+      Business Intelligence Kriterienkatalog
+    </h1>
+    <div id="LinkerContainer">
+      <h2 id="Überschrift2">
+        Herzlich Willkommen bei Ihrem Kriterienkatalog zur Auswahl der für Sie passenden Business Intelligence-Anwendung.
+      </h2>
+      <p id="Beschreibung_Katalog">
+        Die riesigen Datenmengen, welche Unternehmen heutzutage zur Verfügung stehen, stellen für viele eine Herausforderung dar. Dabei bieten sie
+        bei richtiger Verwendung großes Potential und versprechen ungeahnte Wettbewerbsvorteile. Dieser Kriterienkatalog soll Sie bei der Auswahl
+        ihrer Business Intelligence-Anwendung unterstützen. Hierfür haben unsere Entwickler den Markt tiefgreifend untersucht und nach
+        Branche gefiltert die von Unternehmen meist gefordertsten Anforderungen zusammengefasst. Diese sollen Ihnen als Anhaltspunkt dienen sowie
+        das Fundament ihrer Entscheidung für eine Business Intelligence-Anwendung darstellen. Da die Kriterien letztenendes individuell abgestimmt sein müssen, bietet dieser
+        Katalog zudem die Möglichkeit der Gewichtung dieser.
+      </p>
+    </div>
+    <div id="RechterContainer">
+        <p id="Branche">Wählen Sie bitte Ihre <b>Branche</b> aus:</p>
+        <form method ="GET" action="Kriterienkatalog.php">
+          <fieldset>
+            <div class="Branchen">
+              <input type="radio" class="RadioButton" name="Branche" value="Transport" id="Transport" required/>
+              <label for="Transport">Transport</label>
+              <input type="radio" class="RadioButton" name="Branche" value="Telekommunikation" id="Telekommunikation" required/>
+              <label for="Telekommunikation">Telekommunikation</label>
+              <input type="radio" class="RadioButton" name="Branche" value="IT" id="IT" required/>
+              <label for="IT">IT</label>
+            </div>
+          </fieldset>
+          <div id = "Nutzungsbeschreibung">
+            <span>Klicken Sie </span><input type="submit" value="Zum Kriterienkatalog" id="Zum_Kriterienkatalog"></span> um zur auf Sie abgestimmten
+            Zusammenstellung von Kriterien zu gelangen. Nutzen Sie innerhalb dieser die Spalten Erfüllungsgrad mit den Werten zwischen 1 und 10 sowie die
+            Gewichtungsmöglichkeit zwischen 1 und 3. Dies ermöglicht Ihnen zusätzliche Anpassung der Kriterien an ihre Bedürfnisse.</span>
+          </div>
+        </form>
+
+    </div>
+  </body>
+</html>
